@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import './App.css';
 import Banner from "./banner/banner";
+import Segment from "./segment/segment";
 
 class App extends Component {
     constructor(props) {
@@ -16,6 +17,7 @@ class App extends Component {
         return (
             <div className="App">
                 <Banner title={this.state.title} description={this.state.description}/>
+                <Segment />
             </div>
         );
     }
